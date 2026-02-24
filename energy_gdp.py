@@ -159,7 +159,6 @@ handles, labels = axs[0,0].get_legend_handles_labels()
 axs[1,1].legend(handles, labels, loc='center', fontsize='large')
 
 fig.suptitle("Energy and GDP Trends [1995-2023]", fontsize=16, y=0.99)
-plt.title("Energy and GDP trends [1995-2023]")
 plt.tight_layout()
 plt.savefig("Output/Energy_Intensity_percapita_GE_FR_IT_SP.png")
 plt.show()
@@ -231,9 +230,6 @@ plt.show()
 # 8) Computing Elasticity=%ΔEnergy/%ΔGDP + bar chart for each country
 df_sorted["Elasticity"] = df_sorted["Energy_Variation_%"]/df_sorted["GDP_Variation_%"]
 print(df_sorted[["GDP_Variation_%", "Energy_Variation_%", "Elasticity"]].loc[df_sorted['Country'] == 'Italy'])
-# The extremely high elasticity observed in 2013 for Italy is driven by 
-# near-zero GDP growth combined with a significant decline in energy consumption, 
-# generating a mathematically inflated ratio.
 
 #To set Elasticity equal to None where GDP_Variation_% = 0.1, so it does not "explode"
 df_sorted.loc[abs(df_sorted["GDP_Variation_%"]) < 0.1, "Elasticity"] = None
@@ -241,7 +237,7 @@ df_sorted.loc[abs(df_sorted["GDP_Variation_%"]) < 0.1, "Elasticity"] = None
 elasticity_mean = df_sorted.groupby("Country")["Elasticity"].mean()
 print(elasticity_mean)
 # If
-# - Elasticity > 1 = energy growths more than GDP (no decoupling)
+# Elasticity > 1 = energy growths more than GDP (no decoupling)
 # 0 < Elasticity < 1 = energy growths less then PIL (relative decoupling)
 # Elasticity = 0 = GDP growth but the energy does not change
 # Elasticity < 0 → GDP growth while energy decreases (absolute decoupling)
