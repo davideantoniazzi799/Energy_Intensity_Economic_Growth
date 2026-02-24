@@ -245,7 +245,7 @@ print(elasticity_mean)
 # All the selected countries had relative decoupling over the observed period
 
 ax_bar = elasticity_mean.plot(kind='bar', 
-                         ylabel='[%]',
+                         ylabel='Elasticity coefficient',
                          title = 'Average Elasticity [1995-2023]')
 
 plt.tight_layout()
