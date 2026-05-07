@@ -68,9 +68,9 @@ From the second chart it is possible to notice that:
 - **Spain** shows several years of *relative* decoupling, together with many years without such effect.
 
 The average elasticity over the observed period is:
-- Germany: 0.869
-- France: 0.067
-- Italy: 0.133
+- Germany: 0.869;
+- France: 0.067;
+- Italy: 0.133;
 - Spain: 0.624
 
 It is important to know that:
@@ -99,21 +99,21 @@ Italy showed the second lowest averaged elasticity among the selected countries.
 As just said, this value might be affected by the several years of stagnant economy that Italy experienced.
 
 # Limitations
-- The analysis does not control for structural economic changes (e.g. deindustrialization, outsourcing of energy-intensive production)
-- Primary energy consumption may overstate efficiency changes due to energy mix effects
-- The analysis does not decompose energy use by sector (industry, transport, residential)
-- The project does not test causality between GDP growth and energy consumption
+- The analysis does not control for structural economic changes (e.g. deindustrialization, outsourcing of energy-intensive production);
+- Primary energy consumption may overstate efficiency changes due to energy mix effects;
+- The analysis does not decompose energy use by sector (industry, transport, residential);
+- The project does not test causality between GDP growth and energy consumption;
 - Elasticity is sensitive to small GDP variations and short-term shocks (e.g. crises, pandemic) 
 
 # Repository Contents
 - Data folder containing:
-  - annual population of the selected countries over the observed period
-  - annual GDP of the selected countries over the observed period
+  - annual population of the selected countries over the observed period;
+  - annual GDP of the selected countries over the observed period;
   - energy dataset containing the primary energy consumption records
 
 - Output folder containing:
-    - the cleaned *Energy* dataset with data for the selected countries over the observed period
-    - a dataset resulted from the merge of the two input and the manipulated Energy datasets
+    - the cleaned *Energy* dataset with data for the selected countries over the observed period;
+    - a dataset resulted from the merge of the two input and the manipulated Energy datasets;
     - three visualizations: Energy Consumption and GDP Trends; GDP and Energy Consumption variations; Average Elasticity bar chart.
 
 - Python analysis script
