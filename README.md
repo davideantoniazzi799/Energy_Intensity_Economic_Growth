@@ -1,7 +1,7 @@
 ## Energy Intensity and Economic Growth in Major EU Economies (1995–2023)
 
 The project aims to analyze if EU's four most populated countries (Germany, France, Italy, and Spain) 
-are decoupling their economic growth from their energy consumption over the period [1995-2023].
+are decoupling their economic growth from their energy consumption over the period 1995-2023.
 
 # Research Question
 *Are major EU economies decoupling economic growth from energy consumption?*
